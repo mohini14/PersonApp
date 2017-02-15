@@ -15,6 +15,9 @@
 		158B07371E54353D00CE79E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158B07351E54353D00CE79E7 /* LaunchScreen.storyboard */; };
 		158B073F1E5435A100CE79E7 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158B073E1E5435A100CE79E7 /* View.xib */; };
 		158B07421E5439AA00CE79E7 /* PersonXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B07411E5439AA00CE79E7 /* PersonXIBView.m */; };
+		158B07461E54682700CE79E7 /* PickerXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158B07451E54682700CE79E7 /* PickerXIB.xib */; };
+		158B07491E546ABF00CE79E7 /* PIckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B07481E546ABF00CE79E7 /* PIckerManager.m */; };
+		158B074C1E54721400CE79E7 /* PickerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B074B1E54721400CE79E7 /* PickerDisplay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +31,14 @@
 		158B07331E54353D00CE79E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158B07361E54353D00CE79E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		158B07381E54353D00CE79E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		158B073E1E5435A100CE79E7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		158B07401E5439AA00CE79E7 /* PersonXIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonXIBView.h; sourceTree = "<group>"; };
-		158B07411E5439AA00CE79E7 /* PersonXIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonXIBView.m; sourceTree = "<group>"; };
+		158B073E1E5435A100CE79E7 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = PersonApp/View.xib; sourceTree = "<group>"; };
+		158B07401E5439AA00CE79E7 /* PersonXIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonXIBView.h; path = PersonApp/PersonXIBView.h; sourceTree = "<group>"; };
+		158B07411E5439AA00CE79E7 /* PersonXIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonXIBView.m; path = PersonApp/PersonXIBView.m; sourceTree = "<group>"; };
+		158B07451E54682700CE79E7 /* PickerXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerXIB.xib; sourceTree = "<group>"; };
+		158B07471E546ABF00CE79E7 /* PIckerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIckerManager.h; sourceTree = "<group>"; };
+		158B07481E546ABF00CE79E7 /* PIckerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIckerManager.m; sourceTree = "<group>"; };
+		158B074A1E54721400CE79E7 /* PickerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerDisplay.h; sourceTree = "<group>"; };
+		158B074B1E54721400CE79E7 /* PickerDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerDisplay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,9 @@
 		158B071B1E54353B00CE79E7 = {
 			isa = PBXGroup;
 			children = (
+				158B07451E54682700CE79E7 /* PickerXIB.xib */,
+				158B07441E5467DC00CE79E7 /* XIB manager */,
+				158B07431E5467AD00CE79E7 /* XIB files */,
 				158B07261E54353D00CE79E7 /* PersonApp */,
 				158B07251E54353D00CE79E7 /* Products */,
 			);
@@ -67,14 +78,13 @@
 				158B072B1E54353D00CE79E7 /* AppDelegate.m */,
 				158B072D1E54353D00CE79E7 /* ViewController.h */,
 				158B072E1E54353D00CE79E7 /* ViewController.m */,
+				158B074A1E54721400CE79E7 /* PickerDisplay.h */,
+				158B074B1E54721400CE79E7 /* PickerDisplay.m */,
 				158B07301E54353D00CE79E7 /* Main.storyboard */,
 				158B07331E54353D00CE79E7 /* Assets.xcassets */,
 				158B07351E54353D00CE79E7 /* LaunchScreen.storyboard */,
 				158B07381E54353D00CE79E7 /* Info.plist */,
 				158B07271E54353D00CE79E7 /* Supporting Files */,
-				158B073E1E5435A100CE79E7 /* View.xib */,
-				158B07401E5439AA00CE79E7 /* PersonXIBView.h */,
-				158B07411E5439AA00CE79E7 /* PersonXIBView.m */,
 			);
 			path = PersonApp;
 			sourceTree = "<group>";
@@ -85,6 +95,25 @@
 				158B07281E54353D00CE79E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		158B07431E5467AD00CE79E7 /* XIB files */ = {
+			isa = PBXGroup;
+			children = (
+				158B073E1E5435A100CE79E7 /* View.xib */,
+			);
+			name = "XIB files";
+			sourceTree = "<group>";
+		};
+		158B07441E5467DC00CE79E7 /* XIB manager */ = {
+			isa = PBXGroup;
+			children = (
+				158B07401E5439AA00CE79E7 /* PersonXIBView.h */,
+				158B07411E5439AA00CE79E7 /* PersonXIBView.m */,
+				158B07471E546ABF00CE79E7 /* PIckerManager.h */,
+				158B07481E546ABF00CE79E7 /* PIckerManager.m */,
+			);
+			name = "XIB manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158B07461E54682700CE79E7 /* PickerXIB.xib in Resources */,
 				158B073F1E5435A100CE79E7 /* View.xib in Resources */,
 				158B07371E54353D00CE79E7 /* LaunchScreen.storyboard in Resources */,
 				158B07341E54353D00CE79E7 /* Assets.xcassets in Resources */,
@@ -159,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158B074C1E54721400CE79E7 /* PickerDisplay.m in Sources */,
+				158B07491E546ABF00CE79E7 /* PIckerManager.m in Sources */,
 				158B072F1E54353D00CE79E7 /* ViewController.m in Sources */,
 				158B072C1E54353D00CE79E7 /* AppDelegate.m in Sources */,
 				158B07291E54353D00CE79E7 /* main.m in Sources */,
