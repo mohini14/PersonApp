@@ -28,7 +28,7 @@
 -(IBAction)showXIB:(id)sender{
 	
 	PersonXIBView *xib = [PersonXIBView loadNIB];
-	[xib	showView:self.view];
+	[xib showView:self.view];
 }
 
 -(IBAction)hideXIB:(id)sender{

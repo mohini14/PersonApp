@@ -19,7 +19,9 @@
     // Do any additional setup after loading the view.
 	NSArray *data = @[@"a",@"b",@"c"];
 	PIckerManager *picker = [PIckerManager loadPicker];
-	[picker initWithData:data];
+	[picker initWithData:data andBlock:^(NSArray *array, NSInteger row){
+		self.textField.text = array[row];
+	}];
 	_textField.inputView = picker;
 	
 	

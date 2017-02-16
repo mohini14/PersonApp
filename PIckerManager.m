@@ -40,12 +40,27 @@ static PIckerManager *sSharedInstance;
 	
 }
 
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSLog(@"Row selected = %ld", (long)row );
+	self.pickerManagerBlock(pickerData, row );
+}
+
+
 + (instancetype)loadPicker{
 	if(sSharedInstance == nil){
 		sSharedInstance = [[[NSBundle mainBundle] loadNibNamed:@"PickerXIB" owner:self options:nil]lastObject];
 	}
 	return sSharedInstance;
 }
+
+- (void)initWithData:(NSArray *)data andBlock:(PickerManagerBlock)block {
+	pickerData = data;
+	_picker.delegate = self;
+	_picker.dataSource = self;
+	self.pickerManagerBlock = block;
+
+}
+
 
 
 
