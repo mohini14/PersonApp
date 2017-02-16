@@ -14,5 +14,6 @@
 
 -(IBAction)showXIB:(id)sender;
 -(IBAction)hideXIB:(id)sender;
+-(IBAction)prepareForUnwind:(UIStoryboardSegue*)segue;
 @end
 

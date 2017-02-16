@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154583791E5581C9009E602D /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 154583781E5581C9009E602D /* DataModel.m */; };
 		158B07291E54353D00CE79E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B07281E54353D00CE79E7 /* main.m */; };
 		158B072C1E54353D00CE79E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B072B1E54353D00CE79E7 /* AppDelegate.m */; };
 		158B072F1E54353D00CE79E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158B072E1E54353D00CE79E7 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154583771E5581C9009E602D /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		154583781E5581C9009E602D /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		158B07241E54353D00CE79E7 /* PersonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158B07281E54353D00CE79E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		158B072A1E54353D00CE79E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,10 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154583761E5581A7009E602D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				154583771E5581C9009E602D /* DataModel.h */,
+				154583781E5581C9009E602D /* DataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		158B071B1E54353B00CE79E7 = {
 			isa = PBXGroup;
 			children = (
-				158B07451E54682700CE79E7 /* PickerXIB.xib */,
+				154583761E5581A7009E602D /* Model */,
 				158B07441E5467DC00CE79E7 /* XIB manager */,
 				158B07431E5467AD00CE79E7 /* XIB files */,
 				158B07261E54353D00CE79E7 /* PersonApp */,
@@ -101,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				158B073E1E5435A100CE79E7 /* View.xib */,
+				158B07451E54682700CE79E7 /* PickerXIB.xib */,
 			);
 			name = "XIB files";
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 				158B07491E546ABF00CE79E7 /* PIckerManager.m in Sources */,
 				158B072F1E54353D00CE79E7 /* ViewController.m in Sources */,
 				158B072C1E54353D00CE79E7 /* AppDelegate.m in Sources */,
+				154583791E5581C9009E602D /* DataModel.m in Sources */,
 				158B07291E54353D00CE79E7 /* main.m in Sources */,
 				158B07421E5439AA00CE79E7 /* PersonXIBView.m in Sources */,
 			);
@@ -349,6 +363,7 @@
 				158B073D1E54353D00CE79E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

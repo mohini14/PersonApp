@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PIckerManager.h"
+#import "DataModel.h"
 
 @interface PickerDisplay : UIViewController
 

@@ -16,30 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-	NSArray *data = @[@"a",@"b",@"c"];
+	
+	DataModel *getData=[DataModel new];
+	NSArray *data = [getData data];
 	PIckerManager *picker = [PIckerManager loadPicker];
-	[picker initWithData:data andBlock:^(NSArray *array, NSInteger row){
-		self.textField.text = array[row];
+	[picker initWithData:data andBlock:^(NSString *selectedRow,BOOL end) {
+		_textField.text=selectedRow;
+		
+		
+		__weak PickerDisplay  *weakSelf = self;
+		
+		if(end)//if hide button is pressed
+	
+		[weakSelf.view endEditing:YES];
 	}];
-	_textField.inputView = picker;
+	
+	
+	_textField.inputView = picker;//will take pickerView instead of keyboard.
 	
 	
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

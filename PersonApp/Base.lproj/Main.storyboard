@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XcD-xO-YFo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nY8-xj-7tW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,24 +20,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i69-cH-hZJ">
-                                <rect key="frame" x="134" y="617" width="132" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="To picker controller"/>
-                                <connections>
-                                    <segue destination="XcD-xO-YFo" kind="presentation" id="DyG-UG-b9A"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="IgQ-TB-jwP">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="Show" id="lEx-33-NXI">
                             <connections>
                                 <action selector="showXIB:" destination="BYZ-38-t0r" id="Q1P-1H-Zcz"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i69-cH-hZJ">
+                            <rect key="frame" x="122" y="7" width="132" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="To picker View"/>
+                            <connections>
+                                <segue destination="XcD-xO-YFo" kind="presentation" identifier="segue" id="DyG-UG-b9A"/>
+                            </connections>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" title="Hide" id="eug-HZ-eTx">
                             <connections>
                                 <action selector="hideXIB:" destination="BYZ-38-t0r" id="1j1-Ff-79Y"/>
@@ -47,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-830"/>
+            <point key="canvasLocation" x="998" y="-846"/>
         </scene>
         <!--Picker Display-->
         <scene sceneID="Qsa-l6-c5r">
@@ -70,6 +69,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULt-0M-VwZ">
+                                <rect key="frame" x="25" y="81" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="hfQ-p2-7qp" kind="unwind" unwindAction="prepareForUnwind:" id="Hab-V7-dh6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -80,8 +87,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPa-3O-RTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hfQ-p2-7qp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="-862"/>
+            <point key="canvasLocation" x="1797.5999999999999" y="-862.21889055472275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ggs-Hu-qYy">
@@ -99,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVI-G8-fNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.799999999999997" y="-646.32683658170924"/>
+            <point key="canvasLocation" x="148" y="-831"/>
         </scene>
     </scenes>
 </document>

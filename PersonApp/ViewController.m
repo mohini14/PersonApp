@@ -36,5 +36,8 @@
 	PersonXIBView *xib = [PersonXIBView loadNIB];
 	[xib hideView];
 }
+-(IBAction)prepareForUnwind:(UIStoryboardSegue*)segue{
+	
+}
 
 @end

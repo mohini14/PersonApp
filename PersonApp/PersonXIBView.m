@@ -61,4 +61,6 @@ static PersonXIBView *sSharedInstance;
 - (void)hideView{
 	[self removeFromSuperview];
 }
+
+
 @end

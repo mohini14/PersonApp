@@ -19,7 +19,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                     <items>
-                        <barButtonItem title="Hide this Picker" id="wIt-Le-xsh"/>
+                        <barButtonItem title="Hide this Picker" id="wIt-Le-xsh">
+                            <connections>
+                                <action selector="hideButton" destination="iN0-l3-epB" id="oWZ-aq-wfV"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seh-ta-GhL">
